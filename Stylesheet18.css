@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.bv{
+    height:100px;
+    font-size: 1.85rem;
+    width:40%;
+    font-weight: bold;
+    margin-top: 20px;
+}
+    
+.top{
+    display:flex;
+    height: 100px;
+    background-color: pink;
+}
+.tp{
+    width: 60%;
+    height: 100%;
+    display:flex;  
+    justify-content:space-evenly;
+   
+}
+.menu{
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly; 
+    height: 50px;
+}
+.nav{
+    height:150px;
+    background-color: rgb(192, 233, 187);
+}
+.div1{
+     background-color: rgb(45, 113, 168);
+    position: absolute;
+    top: 150px; right: 0;
+    height: 124%;
+    width:60%;
+    opacity: 30%;
+    color:black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.divB{
+    display: flex;
+     height: 100%;
+    width: 100%; 
+    color: black;
+}
+#id{
+    font-size: 1.2rem;
+    
+}
+

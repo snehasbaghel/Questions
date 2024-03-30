@@ -1,0 +1,27 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Java Script Ex...
+		</title>
+        <style>
+            body{
+                background-color: blue;
+            }
+        </style>
+	</head>
+	<body>
+        <button onclick="clickchange()">Click change</button>
+        <script>
+            count=0;
+            bgs = ['#123456','#ABCDEF']
+            function clickchange(){
+                document.body.style.backgroundColor=bgs[count];
+                count=count+1;
+                if(count>=bgs.length){
+                    count=0;
+                }
+            }
+            // setInterval(clickchange,100);
+        </script>
+	</body>
+</html>

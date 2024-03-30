@@ -1,0 +1,28 @@
+div{
+    height:200px;
+    width:200px;
+    border-color:red;
+    border-style: dashed;
+    border-width: 10px;
+    padding:20px;
+    margin: 50px;
+    background-size: cover;
+    outline: solid black 5px;
+    outline-offset: 5px;
+    
+}
+body{
+    background-image: url("bgs/black_denim.png");
+}
+img{
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+}
+q{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(218, 8, 43);
+    font-size: 20px;
+    text-align: justify;
+    text-decoration: underline;
+}

@@ -1,0 +1,24 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>
+		</title>
+	</head>
+	<body>
+        <script>
+            x = "x,y,x";
+            str = new String(" Hello ");
+            document.write("length of x = " + x.charCodeAt(0));  //returns unicode
+            x=x.concat(str);
+            document.write("<br>length of x = " + x);
+            document.write("length of x = " + x.charCodeAt(0));
+            i=x.indexOf('e',2); ///gives occurence for the first time
+            document.write("<br>"+i);
+            x = "x,y,x";
+            p=x.split(",",2);
+            document.write("<br>"+p[2]);
+            k=str.trim();   //outer will be excluded
+            document.write("<br>"+k);
+        </script>
+	</body>
+</html>

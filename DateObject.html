@@ -1,0 +1,51 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>
+            DateObject
+		</title>
+		<style>
+			#clock{
+				height:200px;
+				width:300px;
+				background-color: blue;
+				color:aliceblue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="clock" ></div>
+		<div id="clock1" ></div>
+		<script>
+			clock = document.getElementById("clock");
+			var dt = new Date();
+			function digiClock()
+			{
+				x='#FFC0CB';  //no use of this 
+			
+			hh = dt.getHours();
+			mm = dt.getMinutes();
+			ss = dt.getSeconds();
+			// dd= dt.getDay();     //sunday=0
+			// dm=dt.getMonth();     //use getDate in place of month
+			// dy=dt.getFullYear();
+			time = hh+ ":" + mm + ":" + ss + " ";
+			
+			//time1= dd + ":" + dm + ":" + dy;
+			//document.write(time);
+			clock.innerHTML = time;
+			//clock1.innerHTML = time1;
+			//clock.style.backgroundColor='#'+ss+ss+ss; // it is taking only black color and its variations
+			}
+			day=['Sunday','Monday','Thursday','Wednesday','Thursday','Friday'];
+			dd=day[dt.getDay()];
+			document.write("Day, "+dd+",");
+			d=dt.getDate();
+			mon=['January','February','March','April','May','June'];
+			dm=day[dt.getMonth()];
+			dy=dt.getFullYear();
+			document.write("<br>"+d+"-"+dm+"-"+dy);
+			setInterval(digiClock,500);
+		</script>
+	</body>
+</html>

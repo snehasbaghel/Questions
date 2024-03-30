@@ -1,0 +1,24 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>
+            DateObject
+		</title>
+	</head>
+	<body>
+		<div id="clock" ></div>
+		<script>
+			clock = document.getElementById("clock");
+			function digiClock()
+			{
+            var dt = new Date();
+			hh = dt.getHours();
+			mm = dt.getMinutes();
+			ss = dt.getSeconds();
+			time = hh+ ":" + mm + ":" + ss + " ";
+			clock.innerHTML = time;
+			}
+			setInterval(digiClock,500);
+		</script>
+	</body>
+</html>

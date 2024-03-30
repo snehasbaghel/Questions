@@ -1,0 +1,39 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>
+		</title>
+        <style>
+            .red{
+                background-color: red;
+            }
+            .black{
+                background-color: black;
+            }
+        </style>
+	</head>
+    
+	<body>
+        <script>
+            r=prompt("Enter row no.s:");
+            c=prompt("Enter column no.s: ");
+        </script>
+        <table border="2" id="tb">
+            <script>
+                for(i=0;i<r;i++)
+                {
+                    document.write("<tr>");
+                    for(j=0;j<c;j++)
+                    {
+                        if((i+j)%2===0){
+                        document.write("<td class=black >"+(i+j)+"</td>");}
+                        else{
+                            document.write("<td class=red >"+(i+j)+"</td>");
+                        }
+                    }
+                    document.write("</tr>");
+                }
+            </script>
+        </table>
+	</body>
+</html>

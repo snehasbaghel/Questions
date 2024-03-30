@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Java Script Ex...
+		</title>
+	</head>
+	<body>
+        <button onclick="clickcount()">Change It</button>
+        <div id="display"> 0 </div>
+        <script>
+            // a=prompt("Enter 1st number:");
+            // b=prompt("Enter 2nd number:");
+            // c=parseInt(a)+parseInt(b);
+            // // name=prompt('Enter your name: ');
+            // msg="HELLO JS!";
+            // document.write(msg);
+            // // document.write("Hello "+name);
+            // // alert("Hello " + name);
+            // alert("a+b=" + c)
+            count=0;
+            display = document.getElementById("display");
+            function clickcount()
+            {
+                count=count+1;
+                display.innerHTML = count;
+            }
+        </script>
+	</body>
+</html>

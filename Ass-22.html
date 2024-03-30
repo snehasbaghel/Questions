@@ -1,0 +1,35 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>
+		</title>
+	</head>
+	<body>
+        <div id="msg">
+
+        </div>
+        <script>
+            name=prompt("Enter your name");
+            var dt = new Date();
+            hh = dt.getHours();
+            if(hh<12){
+                greeting="Good Morning";
+            }
+            else if(hh==12){
+                greetings="Good Noon";
+            }
+            else if(hh>12 && hh<17){
+                greetings="Good AfterNoon";
+            }
+            else if(hh>18 && hh<21){
+                greetings="Good Evening";
+            }
+            else{
+                greetings="Good Night";
+            }
+            message=greetings+" "+name;
+            msg=document.getElementById('msg');
+            msg.innerHTML=message;
+        </script>
+	</body>
+</html>
